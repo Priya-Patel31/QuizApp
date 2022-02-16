@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://clean-u-i.netlify.app/component/component.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="homePage-container">
+      <div class="header flex-row justify-between align-center px-2">
+        <div class="flex-row justify-center align-center"><img class ="logo-image" src="/images/logo3.png" alt="logo"/><span class="logo-text font-se">Quiz<span class="text-orange">Buzz</span></span></div>
+        <div class="search-bar-container">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="search" placeholder="Search" class="search-bar" />
+        </div>
+
+        <div class="flex-row justify-center align-center">
+          <div class="mr-2"><a href="/authentication/signin/signin.html">Login</a></div>
+          <div class="component-image-rounded user-sm-image">
+            <img
+              src="/images/avatar.svg"
+              alt="user-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="sidebar ml-2 p-2">
+          <ul class="sidebar-unorderd-list">
+            <li class="list-style-none">
+              <button class="active sidebar-list-item font-semibold text-xs p-2 mb-2">
+                Dashboard
+              </button>
+            </li>
+            <li class="list-style-none">
+              <button class="sidebar-list-item font-semibold text-xs p-2 mb-2">
+               Support
+              </button>
+            </li>
+            <li class="list-style-none">
+              <button class="sidebar-list-item font-semibold text-xs p-2">
+              Notification
+              </button>
+            </li>
+          </ul>
+          <div class="logout font-semibold text-xs">
+            <a href="">Logout</a>
+          </div>
+        </div>
+        <div class="main-content-container flex-col p-2">
+          <div class="main-content-section1-container flex-row mb-1">
+            <div class="user-image-container component-image-rounded">
+              <img
+                class="user-image"
+                src="/images/avatar.svg"
+                alt="user-image"
+              />
+            </div>
+            <div class="user-details-container">
+              <div class="user-details-section1-container">
+                <h2>Priya Patel</h2>
+                <small>priya@gmail.com</small>
+              </div>
+              <div class="user-details-section2-container mt-2 flex-row">
+                <div class="total-score-container flex-row">
+                  <i class="fa-solid fa-flag text-md"></i>
+                  <div class="flex-col align-center">
+                    <h2>27</h2>
+                    <p>Total score</p>
+                  </div>
+                </div>
+                <div class="total-score-container flex-row">
+                  <i class="fa-solid fa-clock text-md"></i>
+                  <div class="">
+                    <h2>27min</h2>
+                    <p>Total time</p>
+                  </div>
+                </div>
+                <div class="total-score-container flex-row">
+                  <i class="fa-solid fa-circle-check text-md"></i>
+                  <div class="flex-col align-center">
+                    <h2 class="">200</h2>
+                    <p>Answers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-section2-container p-1 flex-row">
+            <div class="main-content-section2-card-container">
+              <h2 class="py-2 mb-2 flex-row justify-center">Achievements</h2>
+              <div class="user-achievements-container flex-col">
+                <div class="flex-row justify-around p-2">
+                  <div class="trophy-container component-image-square">
+                    <img src="/images/medal.png" alt="medal-image" />
+                    <p>1st Prize</p>
+                  </div>
+                  <div class="trophy-container component-image-square">
+                    <img src="/images/medal (1).png" alt="medal-image" />
+                    <p>2nd Prize</p>
+                  </div>
+                </div>
+                <div class="space-1rem"></div>
+                <div class="trophy-container component-image-square">
+                  <img src="/images/medal (3).png" alt="medal-image" />
+                  <p>3rd Prize</p>
+                </div>
+                <div class="space-1rem"></div>
+              </div>
+            </div>
+            <div class="main-content-section2-card-container">
+              <h2 class="py-2 flex-row justify-center">Featured Category</h2>
+              <div class="quiz-categories-container flex-col">
+                <div class="quiz-category-card-group-container flex-row justify-around mt-2">
+                  <div class="quiz-category-image component-image-square mx-1">
+                    <img class="" src="/images/mountain.jpg" alt="places-img" />
+                    <p>Places</p>
+                  </div>
+                  <div class="quiz-category-image component-image-square mx-1">
+                    <img src="/images/monument.jpg" alt="monument-img" />
+                    <p>Monuments</p>
+                  </div>
+                </div>
+                <div class="quiz-category-card-group-container flex-row justify-around mt-2">
+                  <div class="quiz-category-image component-image-square mx-1">
+                    <img src="/images/museum.jpg" alt="museumn-img" />
+                    <p>Museums</p>
+                  </div>
+                  <div class="quiz-category-image component-image-square mx-1">
+                    <img src="/images/animal.jpg" alt="animal-img" />
+                    <p>Animals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
