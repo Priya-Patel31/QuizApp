@@ -95,7 +95,7 @@
     width: 10rem;
     height: 10rem;
   }
-  .user-details-container {
+  .details-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,13 +105,13 @@
     flex: 1;
     max-width: 80rem;
   }
-  .user-details-section2-container {
+  .details-section2-container {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 50rem;
   }
-  .total-score-container {
+  .score-container {
     box-shadow: var(--shadow-color) 0px 0px 0px 2px,
     var(--shadow-color) 0px 4px 6px -1px,
     var(--shadow-color) 0px 1px 0px inset;
@@ -163,7 +163,7 @@
     .main-content-section2-container {
       flex-direction: column;
     }
-    .user-details-section2-container {
+    .details-section2-container {
       justify-content: space-around;
     }
     .main-content-section2-card-container {
@@ -200,7 +200,7 @@
     .user-image-container {
       flex: 0;
     }
-    .user-details-section1-container {
+    .details-section1-container {
       display: none;
     }
     .search-bar-container {
