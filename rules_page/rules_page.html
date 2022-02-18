@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rules Page</title>
+    <link
+      rel="stylesheet"
+      href="https://clean-u-i.netlify.app/component/component.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="/index.css"/>
+    <link rel="stylesheet" href="/rules_page/rules_page.css" />
+  </head>
+  <body>
+    <div class="rules-page-container">
+      <div class="header flex-row justify-between align-center px-2">
+        <div class="flex-row justify-center align-center">
+            <img class ="logo-image" src="/images/logo3.png" alt="logo"/>
+            <span class="logo-text font-semibold">Quiz<span class="text-orange">Buzz</span></span>
+        </div>
+        <div class="search-bar-container">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="search" placeholder="Search" class="search-bar" />
+        </div>
+
+        <div class="flex-row justify-center align-center">
+          <div class="mr-2"><a href="/authentication/signin/signin.html">Login</a></div>
+          <div class="component-image-rounded user-sm-image">
+            <img
+              src="/images/avatar.svg"
+              alt="user-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="sidebar ml-2 p-3 mb-3">
+          <ul class="sidebar-unorderd-list">
+            <li class="list-style-none">
+              <button class="active sidebar-list-item font-semibold text-xs p-2 mb-2">
+                Dashboard
+              </button>
+            </li>
+            <li class="list-style-none">
+              <button class="sidebar-list-item font-semibold text-xs p-2 mb-2">
+               Support
+              </button>
+            </li>
+            <li class="list-style-none">
+              <button class="sidebar-list-item font-semibold text-xs p-2">
+              Notification
+              </button>
+            </li>
+          </ul>
+          <div class="logout font-semibold text-xs">
+              <a href="/">Logout</a>
+            </div>
+          </div>
+        <div class="main-content-container flex-col p-2 m-2">
+          <h2 class="pt-2 font-bold">Quiz on Mountains</h2>
+          <p class="my-2">Read the following instructions</p>
+          <div class="quiz-image-details-container">
+            <div class="component-image-square rules-page-image-container">
+                <img
+                src="/images/mountains-image.jpg" alt="mountains-image"
+                />
+            </div>
+            <div class="quiz-details-container flex-col justify-around">    
+                <div><span class="font-semibold quiz-info">Date:</span>28/07/21</div>
+                <div><span  class="font-semibold quiz-info">Time Limit:</span>30 Mins</div>
+                <div><span class="font-semibold quiz-info">Attempts:</span>Once</div>
+                <div><span class="font-semibold quiz-info">Points:</span>200 Points</div>
+            </div>
+          </div>
+          <div>
+              <h2 class="my-2 font-bold">Instructions</h2>
+              <p class="font-medium">This quiz consists of 5 multiple choice questions. To be successful with the quizzes,it's important to be conversant with the topics.  Keep the following in mind.
+                  <br/><br/>
+                  Timing - You need to complete each attempt in one sitting ,as you are alloted 30 minutes to each attempt.</br></br>
+                  Answers - You may review your answer-choices and compare them to the correct answer after your final attempt.
+
+                  <br/><br/>
+                  To start click the "Start" button and when finished click on "Submit" button.
+              </p>
+              <button class="button start-button my-2">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
