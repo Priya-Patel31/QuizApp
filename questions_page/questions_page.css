@@ -1,0 +1,7 @@
+.question-page-container{
+    display: grid;
+    grid-template-rows: 6.25rem auto; 
+}
+.radio-btn{
+    margin-right: 1rem;
+}

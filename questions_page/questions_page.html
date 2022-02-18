@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions page</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://clean-u-i.netlify.app/component/component.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/rules_page/rules_page.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="/questions_page/questions_page.css" />
+  </head>
+  <body>
+    <div class="question-page-container">
+        <div class="header flex-row justify-between align-center px-2">
+            <div class="flex-row justify-center align-center">
+                <img class ="logo-image" src="/images/logo3.png" alt="logo"/>
+                <span class="logo-text font-semibold">Quiz<span class="text-orange">Buzz</span></span>
+            </div>
+            <div class="search-bar-container">
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input type="search" placeholder="Search" class="search-bar" />
+            </div>
+    
+            <div class="flex-row justify-center align-center">
+              <div class="mr-2"><a href="/authentication/signin/signin.html">Login</a></div>
+              <div class="component-image-rounded user-sm-image">
+                <img
+                  src="/images/avatar.svg"
+                  alt="user-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="main-container">
+        <div class="sidebar ml-2 p-2 mb-3">
+          <ul class="sidebar-unorderd-list">
+            <li class="list-style-none">
+              <button class="sidebar-list-item active font-semibold text-xs p-2 mb-2">
+                Dashboard
+              </button>
+            </li>
+            <li class="list-style-none">
+              <button class="sidebar-list-item font-semibold text-xs p-2 mb-2">
+              Support
+              </button>
+            </li>
+            <li class="list-style-none">
+              <button class="sidebar-list-item font-semibold text-xs p-2">
+                Notification
+              </button>
+            </li>
+          </ul>
+          <div class="logout font-semibold text-xs">
+            <a href="/">Logout</a>
+          </div>
+        </div>
+        <div class="main-content-container flex-col p-2 m-2">
+        <div class="flex-row justify-between">
+          <h2 class="pt-2">Quiz on Mountains</h2>
+          <h2 class="pt-2">Timer: 23:41Mins</h2>
+        </div>
+          <p class="my-2">Answer the question below</p>
+          <div class="quiz-image-details-container">
+            <div class="component-image-square">
+              <img src="/images/mountains-image.jpg" alt="mountains-image" />
+            </div>
+            <div>
+              <div class="font-bold">Question 1/5</div>
+              <div class="space-1rem"></div>
+              <div>
+                We all know Kilimanjaro is Africa’s highest mountain. But which
+                is the second highest?
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="my-2 font-bold">Choose Answer</p>
+            <ul class="my-2 list-style-none">
+              <li>
+                <input type="radio" name="options" value="mount-kenya" class="my-2 radio-btn"/>&nbsp;Mount Kenya
+              </li>
+              <li>
+                <input type="radio" name="options" value="stanley" class="my-2 radio-btn"/>&nbsp;Stanley
+              </li>
+              <li>
+                <input type="radio" name="options" value="toubkal" class="my-2 radio-btn" />&nbsp;Toubkal
+              </li>
+              <li>
+                <input type="radio" name="options" value="simien" class="my-2 radio-btn" />&nbsp;Simien
+              </li>
+            </ul>
+            <button class="button start-button my-2">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
