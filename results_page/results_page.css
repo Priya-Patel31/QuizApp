@@ -17,5 +17,7 @@
     background-color:var(--accent-color);
     color:var(--light-color);
     width:fit-content;
+    cursor:pointer;
 }
+
 
