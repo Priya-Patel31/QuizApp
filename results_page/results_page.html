@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <link
+      rel="stylesheet"
+      href="https://clean-u-i.netlify.app/component/component.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+   
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="/rulesPage/rulesPage.css" />
+    <link rel="stylesheet" href="results_page.css" />
+  </head>
+  <body>
+    <div class="result-page-container">
+        <div class="header flex-row justify-between align-center px-2">
+            <div class="flex-row justify-center align-center">
+                <img class ="logo-image" src="/images/logo3.png" alt="logo"/>
+                <span class="logo-text font-se">Quiz<span class="text-orange">Buzz</span></span>
+            </div>
+            <div class="search-bar-container">
+              <button>
+                <i class="fas fa-search"></i>
+              </button>
+              <input type="search" placeholder="Search" class="search-bar" />
+            </div>
+    
+            <div class="flex-row justify-center align-center">
+              <div class="mr-2"><a href="/authentication/signin/signin.html">Login</a></div>
+              <div class="component-image-rounded user-sm-image">
+                <img
+                  src="/images/avatar.svg"
+                  alt="user-img"
+                />
+              </div>
+            </div>
+          </div>
+         <div class="main-container">
+        <div class="sidebar ml-2 p-2 mb-3">
+            <ul class="sidebar-unorderd-list">
+                <li class="list-style-none">
+                  <button class="active sidebar-list-item font-semibold text-xs p-2 mb-2">
+                    Dashboard
+                  </button>
+                </li>
+                <li class="list-style-none">
+                  <button class="sidebar-list-item font-semibold text-xs p-2 mb-2">
+                   Support
+                  </button>
+                </li>
+                <li class="list-style-none">
+                  <button class="sidebar-list-item font-semibold text-xs p-2">
+                  Notification
+                  </button>
+                </li>
+              </ul>
+          <div class="logout font-semibold text-xs">
+            <a href="/">Logout</a>
+          </div>
+        </div>
+        <div class="main-content-container flex-col p-2 m-2">
+          <h2 class="my-2">Your 4 out of 5 questions are correct!!!</h2>
+          <div class="space-1rem"></div>
+          <div class="">
+            <p class="font-bold"> We all know Kilimanjaro is Africa’s highest mountain. But which
+                is the second highest?</p>
+            <div class="space-1rem"></div>
+            <div class="list-container pl-2">
+              <ol class="upper-alphabets-list">
+                <li class="list-item">Mount Kenya</li>
+                <li class="list-item">Stanley</li>
+                <li class="list-item">Toubkal</li>
+                <li class="list-item">Simien</li>
+              </ol>
+            </div>
+            <p class="my-1 correct-answer">Correct Answer : Mount Kenya </p>
+            <p class="my-1 correct-answer">Your Answer : Mount Kenya</p>
+          </div>
+          <div class="space-2rem"></div>
+          <div class="">
+            <p class="font-bold"> We all know Kilimanjaro is Africa’s highest mountain. But which
+                is the second highest?</p>
+            <div class="space-1rem"></div>
+            <div class="list-container pl-2">
+              <ol class="upper-alphabets-list">
+                <li class="list-item">Mount Kenya</li>
+                <li class="list-item">Stanley</li>
+                <li class="list-item">Toubkal</li>
+                <li class="list-item">Simien</li>
+              </ol>
+            </div>
+            <p class="my-1 correct-answer font-medium">Correct Answer : Mount Kenya </p>
+            <p class="my-1 wrong-answer font-medium">Your Answer : Simien</p>
+          </div>
+          <div class="space-2rem"></div>
+          <button class="retake-quiz-btn font-bold">Retake Quiz </button>
+          <div class="space-2rem"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
