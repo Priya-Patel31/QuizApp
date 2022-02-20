@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Questions page</title>
-    
+
     <link
       rel="stylesheet"
       href="https://clean-u-i.netlify.app/component/component.css"
@@ -21,39 +21,44 @@
   </head>
   <body>
     <div class="question-page-container">
-        <div class="header flex-row justify-between align-center px-2">
-            <div class="flex-row justify-center align-center">
-                <img class ="logo-image" src="/images/logo3.png" alt="logo"/>
-                <span class="logo-text font-semibold">Quiz<span class="text-orange">Buzz</span></span>
-            </div>
-            <div class="search-bar-container">
-              <button>
-                <i class="fas fa-search"></i>
-              </button>
-              <input type="search" placeholder="Search" class="search-bar" />
-            </div>
-    
-            <div class="flex-row justify-center align-center">
-              <div class="mr-2"><a href="/authentication/signin/signin.html">Login</a></div>
-              <div class="component-image-rounded user-sm-image">
-                <img
-                  src="/images/avatar.svg"
-                  alt="user-img"
-                />
-              </div>
-            </div>
+      <div class="header flex-row justify-between align-center px-2">
+        <div class="flex-row justify-center align-center">
+          <img class="logo-image" src="/images/logo3.png" alt="logo" />
+          <span class="logo-text font-semibold"
+            >Quiz<span class="text-orange">Buzz</span></span
+          >
+        </div>
+        <div class="search-bar-container">
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="search" placeholder="Search" class="search-bar" />
+        </div>
+
+        <div class="flex-row justify-center align-center">
+          <div class="mr-2">
+            <a href="/authentication/signin/signin.html">Login</a>
           </div>
-          <div class="main-container">
+          <div class="component-image-rounded user-sm-image">
+            <img src="/images/avatar.svg" alt="user-img" />
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
         <div class="sidebar ml-2 p-2 mb-3">
           <ul class="sidebar-unorderd-list">
             <li class="list-style-none">
-              <button class="sidebar-list-item active font-semibold text-xs p-2 mb-2">
-                Dashboard
-              </button>
+              <a href="/index.html">
+                <button
+                  class="sidebar-list-item active font-semibold text-xs p-2 mb-2"
+                >
+                  Dashboard
+                </button>
+              </a>
             </li>
             <li class="list-style-none">
               <button class="sidebar-list-item font-semibold text-xs p-2 mb-2">
-              Support
+                Support
               </button>
             </li>
             <li class="list-style-none">
@@ -62,18 +67,16 @@
               </button>
             </li>
           </ul>
-          <div class="logout font-semibold text-xs">
-            <a href="/">Logout</a>
-          </div>
+          <a href="/" class="logout font-semibold text-xs">Logout</a>
         </div>
         <div class="main-content-container flex-col p-2 m-2">
-        <div class="flex-row justify-between">
-          <h2 class="pt-2">Quiz on Mountains</h2>
-          <h2 class="pt-2">Timer: 23:41Mins</h2>
-        </div>
+          <div class="flex-row justify-between">
+            <h2 class="pt-2">Quiz on Mountains</h2>
+            <h2 class="pt-2">Timer: 23:41Mins</h2>
+          </div>
           <p class="my-2">Answer the question below</p>
           <div class="quiz-image-details-container">
-            <div class="component-image-square">
+            <div class="component-image-square question-page-image-container">
               <img src="/images/mountains-image.jpg" alt="mountains-image" />
             </div>
             <div>
@@ -90,19 +93,54 @@
             <p class="my-2 font-bold">Choose Answer</p>
             <ul class="my-2 list-style-none">
               <li>
-                <input type="radio" name="options" value="mount-kenya" class="my-2 radio-btn"/>&nbsp;Mount Kenya
+                <label for="mount-kenya">
+                  <input
+                    type="radio"
+                    name="options"
+                    value="mount-kenya" 
+                    id="mount-kenya"
+                    class="my-2 radio-btn"
+                  />&nbsp;Mount Kenya
+                </label>
               </li>
               <li>
-                <input type="radio" name="options" value="stanley" class="my-2 radio-btn"/>&nbsp;Stanley
+                <label for="stanley">
+                <input
+                  type="radio"
+                  name="options"
+                  value="stanley"
+                  id="stanley"
+                  class="my-2 radio-btn"
+                />&nbsp;Stanley
+              </label>
               </li>
               <li>
-                <input type="radio" name="options" value="toubkal" class="my-2 radio-btn" />&nbsp;Toubkal
+                <label for="toubkal">
+                <input
+                  type="radio"
+                  name="options"
+                  value="toubkal"
+                  id="toubkal"
+                  class="my-2 radio-btn"
+                />&nbsp;Toubkal
+              </label>
               </li>
               <li>
-                <input type="radio" name="options" value="simien" class="my-2 radio-btn" />&nbsp;Simien
+                <label for="simien">
+                <input
+                  type="radio"
+                  name="options"
+                  value="simien"
+                  id="simien"
+                  class="my-2 radio-btn"
+                />&nbsp;Simien
+              </label>
               </li>
             </ul>
-            <button class="button start-button my-2">Start</button>
+            <a href="/results_page/results_page.html" class="button start-button my-2 font-semibold">
+                Start
+            
+            </a>
           </div>
         </div>
       </div>

@@ -23,6 +23,8 @@
 .rules-page-image-container {
   grid-column-start: 1;
   grid-column-end: 2;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 .quiz-details-container {
   grid-column-start: 2;
@@ -37,6 +39,12 @@
   padding: 0.5rem 2.5rem;
   background-color: var(--accent-color);
   color: var(--light-color);
+  display: inline-block;
+}
+.start-button:hover{
+  background-color:var(--light-color);
+  color:var(--accent-color);
+  border-radius:1rem;
 }
 @media only screen and (max-width: 500px) {
   .quiz-image-details-container {

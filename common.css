@@ -72,8 +72,14 @@ button {
 }
 .logo-text{
   font-family: 'Akaya Telivigala', cursive;
-
 }
-a:hover{
+button:hover{
+  background-color:var(--light-color);
   color:var(--accent-color);
+}
+
+input[type="radio"]{
+ width:1rem;
+  height:1rem;
+  align-items:center;
 }

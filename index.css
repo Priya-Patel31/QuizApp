@@ -43,7 +43,6 @@
     background-color: var(--secondary-color);
     border-radius: 1rem;
     margin: 2rem 0 2rem 2rem;
-
   }
   .sidebar-list-item {
     position: relative;
@@ -53,6 +52,7 @@
     display: block;
     width: 100%;
     cursor:pointer;
+    border-radius:2rem;
   }
   .active{
     background-color: var(--accent-color);
@@ -67,6 +67,11 @@
     background-color: var(--accent-color);
     color: var(--light-color);
     padding: 0.5rem 1rem;
+    transition: all ease-in-out 0.3s;
+  }
+  .logout:hover{
+    background-color:var(--light-color);
+    color:var(--accent-color);
   }
   .main-container {
     display: grid;
@@ -153,12 +158,19 @@
     position: relative;
     width: 12.5rem;
     cursor:pointer;
+    overflow:hidden;
+    border-radius: 1rem;
+  
   }
   .quiz-category-image p {
     position: absolute;
     bottom: 10px;
     left: 10px;
     font-weight: 600;
+  }
+  .component-image-square img:hover{
+    transform:scale(1.2);
+    transition:all ease-out 1s;
   }
   @media only screen and (max-width: 1150px) {
     .main-content-section2-container {
