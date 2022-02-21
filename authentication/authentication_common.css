@@ -20,7 +20,7 @@
   transform: rotate(180deg);
 }
 .form-heading {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 .authentication-details-container {
   max-width:53.12rem;
